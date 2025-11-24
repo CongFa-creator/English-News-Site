@@ -37,7 +37,7 @@
 const urlParams = new URLSearchParams(window.location.search);
 const episodeId = urlParams.get("id");
 
-document.getElementById("audio").src = `audio/${episodeId}.mp3`;
+document.getElementById("audio").src = `audio/${episodeId}.mp4`;
 
 fetch(`data/${episodeId}.json`)
   .then(res => res.json())
